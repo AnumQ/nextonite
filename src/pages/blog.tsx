@@ -1,4 +1,4 @@
-import "src/app/globals.css";
+import "../app/globals.css";
 
 interface Post {
   id: string;
@@ -8,11 +8,16 @@ interface Post {
 const Blog = ({ posts }: { posts: Post[] }) => {
   return (
     <div>
-      <main className="bg-red-900 h-screen space-y-8 flex flex-col justify-content items-center">
-        <div className="">Blog</div>
-        <ul className="bg-blue-500">
+      <main className="bg-yellow-100 h-screen space-y-8 flex flex-col justify-content items-center">
+        <h1 className="">Blog</h1>
+        <ul className="space-y-8">
           {posts.map((post) => (
-            <li key={post.id}>{post.title}</li>
+            <>
+              <li key={post.id} className="mx-10">
+                {post.title}
+              </li>
+              <div className="mx-10 bg-slate-500 h-[1px] flex flex-col justify-content items-center"></div>
+            </>
           ))}
         </ul>
       </main>
