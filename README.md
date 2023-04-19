@@ -20,6 +20,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+
+## Notes
+
+pages - Associated with a route based on their file name. For example, pages/about.js is mapped to /about
+
+public - Stores static assets such as images, fonts, etc. Files inside public directory can then be referenced by your code starting from the base URL (/).
+
+A page is a React Component exported from a .js, .jsx, .ts, or .tsx file in the pages directory. You can even add [https://nextjs.org/docs/routing/dynamic-routes] (dynamic route) parameters with the filename.
+
+Next.js is built around the concept of pages. A page is a React Component exported from a .js, .jsx, .ts, or .tsx file in the pages directory. You can even add dynamic route parameters with the filename.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
