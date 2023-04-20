@@ -8,8 +8,8 @@ interface Post {
 const Blog = ({ posts }: { posts: Post[] }) => {
   return (
     <div>
-      <main className="bg-yellow-100 h-screen space-y-8 flex flex-col justify-content items-center">
-        <h1 className="">Blog</h1>
+      <main className="bg-gray-200 h-screen space-y-8 flex flex-col justify-content items-center">
+        <h1 className="mt-10">Blog</h1>
         <ul className="space-y-8">
           {posts.map((post) => (
             <>
